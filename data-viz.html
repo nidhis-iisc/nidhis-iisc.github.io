@@ -15,24 +15,40 @@
     </nav>
 
     <header>
-        <h1>Data Analysis & Matplotlib Visualizations</h1>
-        <p>Basic analysis performed on a dataset from <a href="https://data.gov.in/">data.gov.in</a>.</p>
+        <h1>Data Analysis and Visualizations </h1>
+        <p>Basic analysis performed on Delhi goverment school results dataset from <a href="https://data.gov.in/">data.gov.in</a>.</p>
         <p>
-            <a href="LINK_TO_PUBLIC_GITHUB_REPO_FOR_DATA_PROJECT">View Code and Full Analysis on GitHub</a> 
-            <small>https://github.com/nidhis-iisc/Data-visualization</small>
+            <a href="https://github.com/nidhis-iisc/Data-visualization">View Code and Full Analysis on GitHub</a> 
         </p>
     </header>
 
-    <section id="visualizations">
+<main>
         
-        <article class="viz-item">
-            <h2>a) Scatter Plot</h2>
-            <p><strong>Variables:</strong> [Describe your X and Y variables here]</p>
-            <p><strong>Observation & Analysis:</strong> [Insert your 2-3 sentence analysis from your project's README here. Focus on the relationship/correlation.]</p>
-            <img src="images/scatter_plot.png" alt="Scatter Plot" style="width: 100%; max-width: 600px;">
-        </article>
+        <section class="viz-item">
+            <h2>1. Distribution of schools across districts</h2>
+            
+            <p>strong>Analysis Summary:</strong></p>
+            
+            <img src="plots/Schools_districts.png" alt="Bar Plot showing total number of schools across districts" style="max-width: 700px;">
+        </section>
 
-    </section>
+        <section class="viz-item">
+            <h2>2. Box Plot: Class XII Pass Percentage Distribution</h2>
+            
+            <p><strong>Analysis Summary:</strong> The distribution of the Class XII academic performance metric is notably tight, with most regional areas clustering together. This narrow range suggests highly similar outcomes across the region, pointing to uniform educational quality or highly consistent grading criteria across all districts.</p>
+            
+            <img src="images/box_plot.png" alt="Box Plot showing distribution of Class XII pass percentages" style="max-width: 700px;">
+        </section>
+
+        <section class="viz-item">
+            <h2>3. Bar Plot: Total Number of Schools per District</h2>
+            
+            <p><strong>Analysis Summary:</strong> The comparison plot highlights significant infrastructure disparities. Specifically, the **North West A** district registers the highest number of schools (117), while the **Central** district shows the lowest infrastructure with only 22 schools. This disparity emphasizes the need for resource allocation models that are proportional to regional demands, rather than a uniform distribution across all areas.</p>
+            
+            <img src="images/Schools_districts.png" alt="Bar plot showing total schools per district" style="max-width: 700px;">
+        </section>
+
+    </main>
 
 </body>
 </html>
