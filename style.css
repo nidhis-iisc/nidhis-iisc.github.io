@@ -1,0 +1,114 @@
+/* --- 1. Global Reset and Variables --- */
+:root {
+    --primary-color: #0056b3;      /* A deep professional blue (for links/headers) */
+    --secondary-color: #333;      /* Dark text color */
+    --background-color: #f4f7f6; /* Light gray background */
+    --accent-color: #e9ecef;     /* Slightly darker light gray for section backgrounds */
+    --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+header {
+    background-color: #fff;
+    padding: 30px 5%;
+    border-bottom: 2px solid var(--primary-color);
+    text-align: center;
+}
+
+/* --- 2. Typography & Headings --- */
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+h3 {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+p, ul {
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* --- 3. Navigation Bar Styling --- */
+nav {
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--secondary-color); /* Dark background for the bar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white; /* Light text on dark background */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+}
+
+/* --- 4. Section and Layout Styling --- */
+section {
+    padding: 20px 5%;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Specific styles for lists (Education/Experience/Projects) */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Styling for Project/Viz items for separation */
+.project-item, .viz-item {
+    padding: 15px;
+    border: 1px solid var(--accent-color);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* --- 5. Image Styling (for Plots) --- */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; /* Ensures images are responsive and fit within the container */
+    height: auto;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+}
