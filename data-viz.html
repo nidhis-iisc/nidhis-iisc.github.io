@@ -71,7 +71,7 @@
 
         <section class="viz-item">
             <h2>4. Student Enrollment (Boys vs Girls) per District Analysis </h2>
-            <img src="plots/boys_girls.png" style="max-width: 700px;">
+            <img src="plots/boys_girls_district" style="max-width: 700px;">
             <ul>
                 <li>
                     <strong>Highest Enrollment:</strong> The <strong>East</strong> district leads in total enrollment for both genders, with girls (approximately 100,000) slightly outnumbering boys (approximately 90,000).
@@ -93,40 +93,113 @@
         </section>
     
         <section class="viz-item">
-            <h2>Student Enrollment (Boys vs Girls) per District Analysis</h2>
-            <img src="plots/.png" style="max-width: 700px;">
-            <h3>Gender Enrollment Observations:</h3>
+            <h2>5. Analysis of Spread of Pass Percentages across Districts (Class X vs. Class XII)</h2>
+            <img src="plots/pass_pct_boxplot.png" style="max-width: 700px;">
             <p>
-            The clustered bar chart reveals a general trend where the <strong>number of enrolled girls (orange bars) is equal to or higher than the number of enrolled boys (blue bars)</strong> in most districts.
+            The box plot illustrates the distribution and variability of pass percentages for Class X and Class XII across the districts.
             </p>
             
+            <h3>Key Observations:</h3>
             <ul>
                 <li>
-                    <strong>Highest Enrollment:</strong> The <strong>East</strong> district leads in total enrollment for both genders, with girls (approximately 100,000) slightly outnumbering boys (approximately 90,000).
+                    <strong>Median Pass Percentage:</strong> The median (the orange line inside the box) for <strong>Class XII is significantly higher</strong> than that of Class X. Class XII's median is approximately 97.2%, while Class X's median is around 94.5%. This suggests that, on average, districts perform better at the Class XII level.
                 </li>
                 <li>
-                    <strong>Female Dominance:</strong> Several districts show a noticeable majority of female students, including <strong>East</strong>, <strong>North East-I</strong>, <strong>North West A</strong>, <strong>West B</strong>, and <strong>South East</strong>.
+                    <strong>Variability (Spread):</strong> 
+                    <ul>
+                        <li><strong>Class X</strong> shows a wider overall spread, ranging from a minimum of approximately 90% up to a maximum near 98.5%. This indicates greater variability or inconsistency in Class X pass percentages across different districts.</li>
+                        <li><strong>Class XII</strong> shows a narrower overall spread, ranging from a minimum of approximately 94% up to a maximum near 99.5%. This indicates <strong>less variability</strong> and generally higher minimum performance across districts for Class XII.</li>
+                    </ul>
                 </li>
                 <li>
-                    <strong>Balanced Enrollment:</strong> The <strong>North West B-I</strong> district stands out with the most balanced gender enrollment, with both boys and girls registering around 70,000 students.
-                </li>
-                <li>
-                    <strong>Lowest Enrollment:</strong> Consistent with prior data, the <strong>New Delhi</strong> district shows negligible enrollment for both genders, near the zero mark.
+                    <strong>Interquartile Range (IQR):</strong> The box itself, representing the middle 50% of the data (IQR), is generally positioned higher for Class XII (between ~96% and ~98.5%) compared to Class X (between ~93% and ~97.5%).
                 </li>
             </ul>
             
             <p>
-            In summary, the data indicates a slightly higher, or at least equal, participation rate for girls compared to boys across the majority of the districts.
+            In summary, districts tend to achieve a <strong>higher median pass rate with less variation</strong> in performance at the Class XII level compared to the Class X level.
             </p>
-        </section>
-
-    
-    
-        <section class="viz-item">
-            <h2>4. </h2>
-            <p><strong>Analysis:</strong></p>
             <img src="plots/.png" style="max-width: 700px;">
         </section>
+
+        
+        <section class="viz-item">
+            <h2>6. Analysis of Total Student Gender Distribution</h2>
+            <p><strong>Analysis:</strong></p>
+            <img src="plots/boys_girls.png" style="max-width: 700px;">
+
+            <p>
+            The pie chart titled "Gender Distribution: Total Students (Boys vs Girls)" illustrates the overall proportion of male and female students across all districts.
+            </p>
+            
+            <h3>Key Finding:</h3>
+            <ul>
+                <li>
+                    <strong>Girls constitute a slight majority</strong> of the total student enrollment, accounting for <strong>52.02%</strong>.
+                </li>
+                <li>
+                    <strong>Boys represent 47.98%</strong> of the total student enrollment.
+                </li>
+            </ul>
+            
+            <p>
+            This distribution indicates that, in total, there are slightly more female students than male students enrolled across the analyzed districts (a difference of approximately 4%).
+            </p>
+        </section>
+        
+        <section class="viz-item">
+            <h2>7. Pass Percentage Trend across Districts</h2>
+            <p><strong>Analysis:</strong></p>
+            <img src="plots/pass_pct_scatter.png" style="max-width: 700px;">
+        </section>
+        
+        <section class="viz-item">
+            <h2>Comparative Analysis: Class X vs. Class XII Students Appeared vs. Passed (2023-24)</h2>
+            <img src="plots/classX_pass_appeared.png" style="max-width: 700px;">
+            <img src="plots/classXII_pass_appeared.png" style="max-width: 700px;">
+            <p>
+            These two clustered bar charts compare the number of students who appeared for and passed the Class X and Class XII examinations across various districts.
+            </p>
+            <h3>Overall Trends (Applicable to both Classes):</h3>
+            <ul>
+                <li>
+                    <strong>High Pass Rate:</strong> In both Class X and Class XII, the number of students who passed (orange bar) is only marginally lower than the number of students who appeared (blue bar) in almost all districts. This indicates a consistently <strong>very high pass percentage</strong> at both levels.
+                </li>
+                <li>
+                    <strong>High Volume Districts:</strong> The districts with the highest student volumes for both appearing and passing are <strong>East</strong>, <strong>North West A</strong>, and <strong>South East</strong>.
+                </li>
+                <li>
+                    <strong>Low Volume Districts:</strong> The <strong>New Delhi</strong> district shows virtually no activity, and the <strong>Central</strong> district registers the lowest meaningful student numbers for both classes.
+                </li>
+            </ul>
+            
+            <h3>Comparative Analysis (Class X vs. Class XII):</h3>
+            <ul>
+                <li>
+                    <strong>Student Drop-off:</strong> High-volume districts like **East** and **South East** show a noticeably higher number of students appearing for **Class X** (East: ~20,000; South East: ~19,000) compared to **Class XII** (East: ~17,500; South East: ~17,800). This suggests a moderate drop-off in enrollment between the secondary and senior secondary levels in these districts.
+                </li>
+                <li>
+                    <strong>Consistency of Pass Rate:</strong> While the pass rate is high for both, a close inspection suggests that the gap between appeared and passed students (i.e., the failure count) is very slightly smaller for most Class XII clusters than for the corresponding Class X clusters. This aligns with the box plot analysis showing a slightly higher pass percentage for Class XII.
+                </li>
+                <li>
+                    <strong>West B District:</strong> This district is one of the few where the number of students appearing for **Class XII** (~15,000) is roughly the same as those appearing for **Class X** (~15,000).
+                </li>
+            </ul>
+            <p>
+            In conclusion, the data demonstrates high student retention from appearance to passing in both classes, but with consistently higher overall student volumes observed at the Class X level compared to Class XII.
+            </p>
+        </section>
+        
+        <section class="viz-item">
+            <h2>8. Class X Quality Index by District </h2>
+            <img src="plots/classX_QI.png" style="max-width: 700px;">
+        </section>
+        
+        <section class="viz-item">
+            <h2>9. Class XII Quality Index by District</h2>
+            <img src="plots/classXII_QI.png" style="max-width: 700px;">
+        </section>
+        
     
 
     </main>
